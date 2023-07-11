@@ -241,11 +241,13 @@ millenio.forEach((x) => console.log(`${x.Title}`));
 */
 console.log("----Esercizio 13----");
 
+//versione con array di appoggio
 /*let appoggio = [];
 for (let i = 0; i < movies.length; i++) {
-  appoggio.push(parseInt(movies[i].Year));
+  appoggio.push(parseInt(movies[i].Year));                              
 }
 const sommaAnni = appoggio.reduce((tot, elem) => (tot += elem));*/
+//versione senza array di appoggio
 const sommaAnni = movies.reduce((tot, elem) => {
   tot += parseInt(elem.Year);
   return tot;
